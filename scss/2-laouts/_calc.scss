@@ -1,0 +1,62 @@
+.calcContainer{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background: #f2f2f2;
+    padding: 15px;
+}
+.clear{
+    clear: both;
+}
+.inputContent{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    .input1{
+        width: 100%;
+        flex: 0 0 100%;
+        height: 36px;
+        border: 1px solid #dddddd;
+        padding: 10px;
+    }
+    :focus{
+        border-color: #d0d0d0;
+        outline: none;
+        @include boxShadow(0 0 6px rgba(0,0,0,.15));
+    }
+}
+.oprators{
+    button{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #666; 
+    }
+    .active{
+        background: yellow;
+    }
+    margin-bottom: 10px;
+}
+.calculateBtn{
+    background: #333;
+    color: #fff;
+    border: 1px transparent;
+    padding: 10px 15px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    @include tran(300ms);
+    &:focus, &:hover{
+        //outline: none;
+        background: #fff;
+        border: 1px solid #333333;
+        color: #333;
+    }
+}
+.result{
+    font-size: 18px;
+    margin-top: 10px;
+}
